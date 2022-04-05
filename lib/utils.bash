@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for bpkg.
 GH_REPO="https://github.com/bpkg/bpkg"
 TOOL_NAME="bpkg"
 TOOL_TEST="bpkg --version"
