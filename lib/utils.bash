@@ -57,7 +57,10 @@ install_version() {
 
   (
     mkdir -p "$install_path/bin"
+    pushd .
+    cd "$ASDF_DOWNLOAD_PATH"
     PREFIX="$install_path" ./setup.sh install
+    popd
     #cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
     local tool_cmd
